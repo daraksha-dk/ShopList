@@ -1,0 +1,10 @@
+.app {
+  border-radius: 15px;
+  margin: 30px 0;
+  text-align: center;
+  padding: 10px 50px;
+  &_container {
+    color: rgba(0, 183, 255, 1);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,60 @@
+@mixin BorderDesign {
+  border: 2px solid black;
+  margin: 5px;
+  height: 20px;
+}
+@mixin design {
+  border: 2px solid black;
+  margin: 5px;
+  height: 20px;
+  width: 80vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  height: 100%;
+  position: relative;
+  border: 1px solid gray;
+  &_container {
+    display: flex;
+    background: yellowgreen;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &_area {
+    @include BorderDesign();
+  }
+  &_category {
+    @include BorderDesign();
+  }
+  &_opendate {
+    @include BorderDesign();
+  }
+  &_closedate {
+    @include BorderDesign();
+  }
+}
+@media only screen and (max-width: 700px) {
+  .card {
+    display: grid;
+    flex-direction: column;
+    &_container {
+      width: 90vw;
+    }
+    &_area {
+      @include design();
+    }
+    &_category {
+      @include design();
+    }
+    &_opendate {
+      @include design();
+    }
+    &_closedate {
+      @include design();
+    }
+  }
+}
