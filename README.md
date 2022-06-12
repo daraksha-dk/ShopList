@@ -1,11 +1,8 @@
 <h1>ShopList App</h1>
 
-![shop.mkv](shop.mkv.gif)
-
 ## Features
 
 - Create,delete,update posts
-- Make different posts for shops
 
 ## NPM Packages Used
 
